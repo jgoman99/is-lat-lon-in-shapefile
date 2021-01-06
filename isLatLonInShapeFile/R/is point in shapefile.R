@@ -15,7 +15,7 @@
 #' @param toGraph Boolean to tell the function to also output a graph. Useful for debugging.
 #' @param pointSize numeric value that sets size of graph points.
 #' @export
-is_point_in_shape_file <- function(file_path,lat,lon, toGraph = False, pointSize = 5)
+is_point_in_shape_file <- function(file_path,lon,lat, toGraph = FALSE, pointSize = 5)
 {
 
   shp <- tryCatch(
@@ -51,7 +51,7 @@ is_point_in_shape_file <- function(file_path,lat,lon, toGraph = False, pointSize
 
 
 
-  coordinates(dat) <- ~ Longitude + Latitude
+  coordinates(dat) <- ~ Longitude+Latitude
 
   oldw <- getOption("warn")
   options(warn = -1)
@@ -68,7 +68,7 @@ is_point_in_shape_file <- function(file_path,lat,lon, toGraph = False, pointSize
                    colour = alpha("darkred", 1/2), size = 0.7) +
       scale_fill_manual(values = c("skyblue", bg)) +
       theme(panel.background = element_rect(fill = bg),
-            legend.position = "none") + geom_point(data=dat_ggplot, aes(x=lat,y=lon, colour="red", size =pointSize))
+            legend.position = "none") + geom_point(data=dat_ggplot, aes(x=lon,y=lat, colour="red", size =pointSize))
     print(g)
 
     print("Is there a big red dot in the middle of the map you're looking at, but the function is returning false?")

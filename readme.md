@@ -8,6 +8,3 @@ devtools::install_github("jgoman99/is-lat-lon-in-shapefile/isLatLonInShapeFile")
 
 Notes:
 The graphs don't look great right now. I will fix that (Probably).
-
-Bugs:
-Accidentally set toGraph default to be False. This should be FALSE. Will fix soon (probably)
