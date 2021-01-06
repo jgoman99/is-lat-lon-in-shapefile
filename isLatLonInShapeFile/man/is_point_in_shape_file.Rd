@@ -4,14 +4,14 @@
 \alias{is_point_in_shape_file}
 \title{Is a latitude and longitude point in a matrix}
 \usage{
-is_point_in_shape_file(file_path, lat, lon, toGraph = False, pointSize = 5)
+is_point_in_shape_file(file_path, lon, lat, toGraph = FALSE, pointSize = 5)
 }
 \arguments{
 \item{file_path}{Path to your shapefile}
 
-\item{lat}{Latitude (can be a vector)}
-
 \item{lon}{Longitude (can be a vector)}
+
+\item{lat}{Latitude (can be a vector)}
 
 \item{toGraph}{Boolean to tell the function to also output a graph. Useful for debugging.}
 

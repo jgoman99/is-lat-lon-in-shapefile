@@ -10,8 +10,8 @@
 #' whitespace. This case will return false, even though you can tell that it is true.
 #'
 #' @param file_path Path to your shapefile
-#' @param lat Latitude (can be a vector)
 #' @param lon Longitude (can be a vector)
+#' @param lat Latitude (can be a vector)
 #' @param toGraph Boolean to tell the function to also output a graph. Useful for debugging.
 #' @param pointSize numeric value that sets size of graph points.
 #' @export
