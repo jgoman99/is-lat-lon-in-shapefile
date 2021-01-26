@@ -13,11 +13,12 @@
 what_subdivision_is_point_in <- function(shp,colname,lon,lat)
 {
   shpnames = shp@data[colname]
+  shpnames = shpnames[[1]]
   for (i in 1:length(shpnames))
   {
     shpname = shpnames[i]
-    shp = shp[which(shp@data[colname]==shpname),]
-    if (is_point_in_shape(shp,lon,lat))
+    new_shp = shp[which(shp@data[colname]==shpname),]
+    if (is_point_in_shape(new_shp,lon,lat))
     {
       return(shpname)
     }
