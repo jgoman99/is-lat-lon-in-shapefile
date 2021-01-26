@@ -3,3 +3,4 @@
 export(is_point_in_shape)
 export(is_point_in_shape_file)
 export(test_func)
+export(what_subdivision_is_point_in)
