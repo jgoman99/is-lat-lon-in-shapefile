@@ -14,6 +14,8 @@ is_point_in_shape(shp, lon, lat, toGraph = FALSE, pointSize = 5)
 \item{lat}{Latitude (can be a vector)}
 
 \item{toGraph}{Boolean to tell the function to also output a graph. Useful for debugging.}
+
+\item{pointSize}{numeric value that sets size of graph points.}
 }
 \description{
 This function takes a shape, then checks if the latitude and longitude pairs supplied to it are in the shape

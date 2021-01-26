@@ -13,7 +13,8 @@
 #' @param lon Longitude (can be a vector)
 #' @param lat Latitude (can be a vector)
 #' @param toGraph Boolean to tell the function to also output a graph. Useful for debugging.
-#' @param po
+#' @param pointSize numeric value that sets size of graph points.
+#' @export
 is_point_in_shape <- function(shp,lon,lat, toGraph = FALSE, pointSize = 5)
 {
 
