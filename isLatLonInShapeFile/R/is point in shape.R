@@ -14,7 +14,7 @@
 #' @param lat Latitude (can be a vector)
 #' @param toGraph Boolean to tell the function to also output a graph. Useful for debugging.
 #' @param po
-is_point_in_shape_file <- function(shp,lon,lat, toGraph = FALSE, pointSize = 5)
+is_point_in_shape <- function(shp,lon,lat, toGraph = FALSE, pointSize = 5)
 {
 
   shp <- spTransform(shp, CRS("+proj=longlat +datum=WGS84"))
