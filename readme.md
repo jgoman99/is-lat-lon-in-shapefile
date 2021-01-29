@@ -8,3 +8,7 @@ devtools::install_github("jgoman99/is-lat-lon-in-shapefile/isLatLonInShapeFile")
 
 Notes:
 The graphs don't look great right now. I will fix that (Probably).
+
+
+More thingsto write:
+app to select points
